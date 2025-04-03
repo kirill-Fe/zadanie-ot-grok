@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .flex-center {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover; 
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h1, h2 {
+            color: #007bff; 
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .contacts {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px; 
+            }
+
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex-center">
+        <section>
+            <h1>Кирилл Флорик</h1>
+            <img src="./assets/img/icon.png" alt="">
+            <p>Привет! Я начинающий веб-разработчик, увлеченный созданием красивых и функциональных веб-сайтов. Люблю учиться новому и решать сложные задачи.</p>
+        </section>
+
+        <section>
+            <h2>Навыки</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Адаптивная верстка</li>
+            </ul>
+        </section>
+
+        <section class="contacts">
+            <h2>Контакты</h2>
+            <p>ТГ: <a href="https://t.me/Kirill_Florik">Kirill_Florik</a></p>
+            <p>ТГК: <a href="https://t.me/klubflorika">klubflorika</a></p>
+        </section>
+    </div>
+</body>
+</html>
